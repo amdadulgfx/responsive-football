@@ -131,8 +131,10 @@ header:hover .topper-banner>img {
 }
 
 /* this is final match section  */
-.final,.shop h2{ 
+.final h2,.shop h2{ 
     text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
 }
 .match-details {
     border: 5px solid #2d25a0b2;
@@ -246,5 +248,26 @@ header:hover .topper-banner>img {
     .social img {
         width: 250px;
         height: 60px;
+    }
+}
+
+/* media query for tablet  */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container,.topper-container {
+        width: 100%;
+    }
+    .topper  {
+        flex-direction: column;
+    }
+    .topper-banner img{
+        margin-top: 40px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .jerseys {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
