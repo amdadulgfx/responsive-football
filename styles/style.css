@@ -95,7 +95,7 @@ header:hover .topper-banner>img {
     grid-template-columns: repeat(3, 1fr);
     /* grid-column-gap: 30px; */
     grid-gap: 27px 30px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .player {
     padding: 15px;
@@ -128,4 +128,90 @@ header:hover .topper-banner>img {
     color: #969BAB;
     padding: 7px;
     margin: 0 14px;
+}
+
+/* this is final match section  */
+.final,.shop h2{ 
+    text-align: center;
+}
+.match-details {
+    border: 5px solid #2d25a0b2;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.171);
+}
+.match-vs {
+    display: flex;
+    align-items: center;
+}
+.team-name {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.vs {
+    padding: 25px;
+    margin: 0 10px;
+    background-color: #2D25A0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+.match-details img {
+    height: 75px;
+}
+.time-remaining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.time-stamp {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px;
+
+}
+.time-stamp span {
+    font-size: 16px;
+}
+
+/* this is shopping section */
+.jerseys {
+    display: flex;
+    margin-bottom: 50px;
+}
+.jersey {
+    margin: 25px;
+    border: 3px solid #2d25a077;
+    padding: 25px;
+}
+.jersey-title h4{
+    font-size: 20px;
+    margin: 0;
+}
+.jersey-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.jersey-title p{
+    margin: 0;
+}
+.jersey-img img {
+    height: 250px;
+}
+.fa-star {
+    color: #FFC61C;
+}
+.cart {
+    display: flex;
+}
+.fa-heart {
+    background-color: #FFC61C;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
 }
