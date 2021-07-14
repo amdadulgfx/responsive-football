@@ -215,3 +215,36 @@ header:hover .topper-banner>img {
     color: white;
     margin-left: 10px;
 }
+
+/* mediaquery for mobile devices  */
+@media only screen and (max-width:688px){
+    
+    .container,.topper-container {
+        width: 100%;
+    }
+    .topper,.jerseys   {
+        flex-direction: column;
+    }
+    .topper-title {
+        font-size: 36px;
+    }
+    .topper-banner img{
+        margin-top: 25px;
+        width: 329px;
+        height: 260px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .match-details {
+        padding: 25px 0;
+    }
+    .match-vs {
+        flex-direction: column-reverse;
+    }
+    
+    .social img {
+        width: 250px;
+        height: 60px;
+    }
+}
