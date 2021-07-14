@@ -18,7 +18,7 @@ header, main, footer {
     justify-content: center;
     align-items: center;
 }
-
+ 
 .container {
     width: 1160px;
     display: flex;
@@ -57,10 +57,37 @@ p {
     background-color: #E02C6D;
     border: 0;
     color: white;
+    font-size: 16px;
+    transition: background-color 1s ease;
+}
+.btn:hover {
+    border: 2px solid #E02C6D;
+    background-color: #2D25A0;
+    padding: 8px 22px;
+    cursor: pointer;
+}
+
+.fa-arrow-right {
+    padding-left: 8px;
+    animation: slider 0.5s ease 0.5s infinite alternate;
+    position: relative;
 }
 .topper-banner img{
     width: 556px;
     height: 438px;
+    transition: transform 0.5s ease-in-out;
+}
+header:hover .topper-banner>img {
+    transform:  scale(1.04) translateY(30px);
+}
+@keyframes slider {
+    0% {
+        transform:  translateX(8px);
+        left: 0;
+    }
+    100% {
+        left: 1px;
+    }
 }
 /* this is player section  */
 .players {
@@ -79,6 +106,7 @@ p {
 .player img{
     height: 256px;
 }
+/* this is footer section */
 .social {
     width: 483px;
     display: flex;
